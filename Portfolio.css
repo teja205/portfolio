@@ -73,7 +73,7 @@
 /*Home section styling*/
 .home{
     display: flex;
-    background: url("banner4.jpg") no-repeat;
+    background: url("banner4.png") no-repeat;
     background-size:cover;
     height: 100vh;
     color: white;
@@ -89,6 +89,7 @@
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
+    color: crimson;
     margin-left: -3px;
 }
 .home .home-content .text-3{
@@ -195,10 +196,12 @@ section .title::before{
 }
 .about .about-content .right a:hover{
     color: crimson;
+    cursor: pointer;
     background: none;
 }
 .animate{
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
@@ -274,6 +277,7 @@ section .title::before{
 /*skill section styling*/
 .skills .skills-content{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -289,6 +293,10 @@ section .title::before{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    margin-bottom: 30px;
+}
+.skills-content .card:hover{
+    cursor: pointer;
 }
 .skills-content .card::before,
 .skills-content .card::after{
@@ -340,6 +348,37 @@ section .title::before{
     font-size: 22px;
     font-weight: 800;
     color: crimson;
+}
+
+.footer {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    background: crimson;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: white;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.footer a:hover{
+    cursor: pointer;
+}
+.footer a img{
+    width: 100%;
+    height: 100%;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
 
 
